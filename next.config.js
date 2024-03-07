@@ -3,6 +3,22 @@ const nextConfig = {
   experimental: {
     appDir: true,
   },
+  images: {
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "raw.githubusercontent.com",
+        port: "",
+        pathname: "/mescherskiy/next-blogposts/main/images/**"
+      },
+      {
+        protocol: "https",
+        hostname: "raw.githubusercontent.com",
+        port: "",
+        pathname: "/gitdagray/test-blogposts/main/images/**"
+      },
+    ]
+  }
 }
 
 module.exports = nextConfig
